@@ -76,7 +76,7 @@ export function KanbanList({ list, searchQuery = "" }: KanbanListProps) {
   };
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 rounded-lg p-4 min-w-[320px] max-w-[320px] flex flex-col">
+    <div className="bg-gray-100 dark:bg-gray-900 rounded-lg p-4 min-w-[320px] max-w-[320px] flex flex-col h-full">
       {/* List Header */}
       <div className="mb-4">
         {isEditingName ? (

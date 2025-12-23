@@ -117,10 +117,10 @@ export function KanbanBoard() {
             </div>
           </div>
 
-          <div className="flex gap-4 overflow-x-auto pb-4">
+          <div className="flex gap-4 overflow-x-auto pb-4 items-stretch">
             {/* Lists */}
             {filteredLists.map((list) => (
-              <div key={list.id} className="animate-[slideIn_0.3s_ease-out]">
+              <div key={list.id} className="animate-[slideIn_0.3s_ease-out] flex">
                 <KanbanList list={list} searchQuery={searchQuery} />
               </div>
             ))}
